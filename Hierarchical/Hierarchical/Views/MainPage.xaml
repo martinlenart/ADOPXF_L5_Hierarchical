@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hierarchical.Views.MainPage"
+             xmlns:views="using:Hierarchical.Views"
+             Title="Hierarchical navigaion demo">
+
+    <StackLayout>
+        <Label Text="NavigationPage"
+               FontSize="40"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <StackLayout HorizontalOptions="Center">
+            <Button Text=" Go to Content1Page"
+                    Font="Large"
+                    BorderWidth="1" 
+                    CommandParameter="{x:Type views:Content1Page}"
+                    Clicked="OnButtonClicked" />
+
+            <Button Text=" Go to Content2Page"
+                    Font="Large"
+                    BorderWidth="1" 
+                    CommandParameter="{x:Type views:Content2Page}"
+                    Clicked="OnButtonClicked" />
+
+            <Button Text=" Go to Content3Page"
+                    Font="Large"
+                    BorderWidth="1" 
+                    CommandParameter="{x:Type views:Content3Page}"
+                    Clicked="OnButtonClicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

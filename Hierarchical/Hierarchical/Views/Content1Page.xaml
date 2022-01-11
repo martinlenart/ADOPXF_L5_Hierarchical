@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hierarchical.Views.Content1Page"
+             Title="Content1Page"
+             Padding="20">
+    <ContentPage.Content>
+        <StackLayout Spacing="50">
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Content1Page data goes here" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Frame BorderColor="Black">
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="ActionSheet" FontSize="Large" HorizontalOptions="Center" />
+                    <Label x:Name="lblAnswer" Text="Action Answer"/>
+                    <Button Text="ActionSheet Simple" Clicked="OnActionSheetSimpleClicked" />
+                    <Button Text="ActionSheet Cancel/Delete" Clicked="OnActionSheetCancelDeleteClicked" />
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="LightYellow">
+                <StackLayout VerticalOptions="End">
+                    <Button Text="Next" Clicked="Button_Clicked" />
+                    <Button Text="Back" Clicked="Button_Clicked_1" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

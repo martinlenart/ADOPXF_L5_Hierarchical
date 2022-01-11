@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hierarchical.Views.Content3Page"
+             xmlns:views="using:Hierarchical.Views"
+             Title="Content3Page"
+             Padding="20">
+    <ContentPage.Content>
+        <StackLayout Spacing="50">
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Content3Page data goes here" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>            
+            <Frame BorderColor="Black">
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Display Prompt" FontSize="Large" HorizontalOptions="Center" />
+                    <Label x:Name="lblAnswer" />
+                    <Button Text="Question 1" Clicked="OnQuestion1ButtonClicked" />
+                    <Button Text="Question 2" Clicked="OnQuestion2ButtonClicked" />
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="LightYellow">
+                <StackLayout VerticalOptions="End">
+                    <Button Text="Back" Clicked="Button_Clicked_1" />
+                    <Button Text="Menu" Clicked="Button_Clicked_2" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

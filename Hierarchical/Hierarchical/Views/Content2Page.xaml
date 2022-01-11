@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hierarchical.Views.Content2Page"
+             Title="Content2Page"
+             Padding="20">
+    <ContentPage.Content>
+        <StackLayout Spacing="50">
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Content2Page data goes here" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Frame BorderColor="Black">
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="DisplayAlert" FontSize="Large" HorizontalOptions="Center" />
+                    <Label x:Name="lblAnswer" />
+                    <Button Text="Alert Simple" Clicked="OnAlertSimpleClicked" />
+                    <Button Text="Alert Yes/No" Clicked="OnAlertYesNoClicked" />
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="LightYellow">
+                <StackLayout VerticalOptions="End">
+                    <Button Text="Next" Clicked="Button_Clicked" />
+                    <Button Text="Back" Clicked="Button_Clicked_1" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
